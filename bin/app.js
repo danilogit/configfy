@@ -38,6 +38,5 @@ program
 try {
     program.parse(process.argv);
 } catch (err) {
-    console.log(err)
     console.log("Error:", err.message);
 }
