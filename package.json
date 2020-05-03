@@ -1,16 +1,18 @@
 {
-  "name": "text-template",
-  "version": "1.0.0",
+  "name": "configfy",
+  "alias": "configfy",
+  "version": "1.0.1",
   "description": "",
   "main": "bin/app.js",
   "bin": {
-    "text-template": "bin/app.js"
+    "configfy": "bin/app.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "",
+    "pub": "npm version minor && npm publish --access=public"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "commander": "^5.1.0",
     "handlebars": "^4.7.6",

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const hbs = require('handlebars');
 const fs = require('fs');
 const program = require('commander');
@@ -22,11 +23,11 @@ const parseYaml = (filePath) => {
 program
     .version(pkjson.version)
     .command("parse")
-    .requiredOption('-t,--textfile <source>', "Text file to be parsed")
-    .requiredOption('-d,--data <json_file>', "JSON file")
+    .requiredOption('-t,--template <source>', "Handlebars template to be parsed")
+    .requiredOption('-d,--data <data>', "JSON or YAML file")
     .action(function (options) {
         const dataFilePath = path.resolve(options.data);
-        const textfileContent = fs.readFileSync(options.textfile).toString();
+        const textfileContent = fs.readFileSync(options.template).toString();
         const data = parseYaml(dataFilePath)
 
         const template = hbs.compile(textfileContent);
