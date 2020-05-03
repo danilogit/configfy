@@ -29,7 +29,7 @@ Lets supose we need to edit an HAPROXY config file and add some servers into the
         balance roundrobin
         default-server check maxconn 2000
         {{#each servers}}
-        server server-{{@index}} {{address}}:{{port}} ipv4 init-addr last,libc,none
+        server server-{{@index}} {{address}}:{{port}} init-addr last,libc,none
         {{/each}}
     
     listen stats
@@ -44,7 +44,7 @@ and use an JSON file to pass our values
    servers:
     - address: 10.1.0.5
       port: 8080
-    - address: 10.1.0.5
+    - address: 10.1.0.6
       port: 8080
 ```
 
