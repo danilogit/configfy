@@ -48,7 +48,7 @@ and use an JSON file to pass our values
       port: 8080
 ```
 
-then execute to get our config file
+then execute the following command to get our config file
 
     configfy parse -t haproxy.hbs -d haproxy.yml > haproxy.cfg
 

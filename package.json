@@ -1,7 +1,7 @@
 {
   "name": "configfy",
   "alias": "configfy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "bin/app.js",
   "bin": {
