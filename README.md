@@ -2,7 +2,7 @@
 We as DevOps engineers sometimes need to deal with a huge varity of config files and its paramenters. Configuring parameters can be very annoying and this module help us to write them more easily using JSON or YAML files structures and [Handlebars](https://handlebarsjs.com/) templates. Actually this is a kind of Handlebars wrapper.
 
 # Installing
-    npm i config -g
+    npm i configfy -g
 
 # Usage
     configfy parse -t some-config-file.hbs -d data-file.yml
@@ -38,7 +38,7 @@ Let's suppose we need to edit an HAPROXY config file and add some servers into t
         stats uri /monitor
 ```
 
-and use an JSON file `haproxy.yml`to pass our values
+and use an YAML file `haproxy.yml`to pass our values
 
 ```yaml
    servers:

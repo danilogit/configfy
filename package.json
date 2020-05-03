@@ -1,7 +1,7 @@
 {
   "name": "configfy",
   "alias": "configfy",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "",
   "main": "bin/app.js",
   "bin": {
@@ -11,6 +11,20 @@
     "test": "",
     "pub": "npm version minor && npm publish --access=public"
   },
+  "bugs": {
+    "url": "https://github.com/danilogit/configfy/issues"
+  },
+  "homepage": "https://github.com/danilogit/configfy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danilogit/configfy"
+  },
+  "tags": [
+    "devops",
+    "config",
+    "templates",
+    "handlebars"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
