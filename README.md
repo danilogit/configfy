@@ -9,7 +9,7 @@ We as DevOps engineers sometimes need to deal with a huge varity of config files
 
 # Example
 
-Lets supose we need to edit an HAPROXY config file and add some servers into the backend section. We can write a template `haproxy.hbs` like this 
+Let's suppose we need to edit an HAPROXY config file and add some servers into the backend section. We can write a template `haproxy.hbs` like this 
 
 ```
     global
@@ -38,7 +38,7 @@ Lets supose we need to edit an HAPROXY config file and add some servers into the
         stats uri /monitor
 ```
 
-and use an JSON file to pass our values
+and use an JSON file `haproxy.yml`to pass our values
 
 ```yaml
    servers:
